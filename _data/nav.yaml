@@ -1,0 +1,8 @@
+- name: About 
+  link: /
+- name: Experience
+  link: /jobs/
+- name: Projects
+  link: /projects/
+- name: Hobbies
+  link: /hobbies/
