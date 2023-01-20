@@ -1,0 +1,29 @@
+---
+layout: page
+title: Projects
+---
+
+<p>
+  {{site.data.text.projects}}
+</p>
+
+<ul>
+{% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+{% for project in sorted_projects %}
+  <li>
+    <h3>
+      <a href="{{ project.url }}">
+      {{ project.title }}
+      </a>
+    </h3>
+    <span>{{ project.subtitle }}</span><br/>
+    <span>{{ project.location }} | {{ project.year }}</span><br/>
+
+    {% if project.collaborators %}
+    <span>w/ {{ project.collaborators }}</span>
+    {% endif %}
+
+    <p>{{ project.excerpt }}</p>
+  </li>
+{% endfor %}
+</ul>
