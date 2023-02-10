@@ -44,3 +44,5 @@ version: 3.0.0
 collections:
   projects:
     output: true
+  jobs:
+    output: false

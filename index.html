@@ -10,3 +10,18 @@ title: Hey, I'm Ken!
 <p>
   {{site.data.text.disclaimer}}
 </p>
+
+<hr>
+
+<h2>Where I've Worked</h2>
+<ul>
+{% assign sorted_jobs = site.jobs | sort: 'date' | reverse %}
+{% for job in sorted_jobs %}
+  <li>
+    <h3>{{job.position}} @ {{job.title}}</h3>
+    <p>{{job.start}} - {{job.end}} | {{job.location}} </p>
+    <p>{{job.excerpt}}</p>
+  </li>
+
+{% endfor %}
+</ul>
