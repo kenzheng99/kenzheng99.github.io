@@ -6,6 +6,7 @@ location : CMU
 year: 2022
 date: 2022-05-01
 featured: true
+tags: ['Image Generation', 'Music', 'Neural Network Design', 'PyTorch']
 ---
 
 In this project, we visualize songs using images that pulsate and move along with music using a type of neural network called a Compositional Pattern Producing Network (CPPN).

@@ -6,6 +6,7 @@ location: CMU
 year: 2023
 date: 2023-02-05
 portfolio: true
+tags: ['Unity', 'C#', 'Game Programming', 'Game Jam']
 ---
 
 This was my first in-person game jam, I had a lot of fun working with a group from my game development class on this 

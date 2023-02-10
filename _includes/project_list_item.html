@@ -1,0 +1,15 @@
+{% assign project = include.project %}
+<li>
+  <h3>
+    {{ project.title }}
+  </h3>
+  <span>{{ project.subtitle }}</span><br/>
+  <span>{{ project.location }} | {{ project.year }}</span><br/>
+  {% include tag_list.html tags=project.tags %}
+
+  {% if project.collaborators %}
+  <span>w/ {{ project.collaborators }}</span>
+  {% endif %}
+
+  <p>{{ project.excerpt }}</p>
+</li>

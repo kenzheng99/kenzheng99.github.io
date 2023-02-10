@@ -6,7 +6,7 @@ location: San Francisco, CA
 start: Jun 2019
 end: Aug 2019
 date: 2019-08-01
-tags: AngularJS, Frontend, TypeScript, HTML, CSS 
+tags: ['AngularJS', 'Frontend', 'TypeScript', 'HTML', 'CSS'] 
 ---
 
 - Implemented front-end features (Stripe integration, geofencing, shopping cart, etc), UI updates, and bug fixes for a

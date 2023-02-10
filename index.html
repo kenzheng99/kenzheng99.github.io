@@ -20,12 +20,7 @@ title: Hey, I'm Ken!
 <ul>
 {% assign sorted_jobs = site.jobs | sort: 'date' | reverse %}
 {% for job in sorted_jobs %}
-  <li>
-    <h3>{{job.position}} @ {{job.title}}</h3>
-    <p>{{job.start}} - {{job.end}} | {{job.location}} </p>
-    <p>{{job.excerpt}}</p>
-  </li>
-
+  {% include job_list_item.html job=job %}
 {% endfor %}
 </ul>
 
@@ -39,19 +34,7 @@ Here are some notable projects and publications I've worked on during my time at
 {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
 {% for project in sorted_projects %}
   {% if project.featured == true %}
-    <li>
-      <h3>
-        {{ project.title }}
-      </h3>
-      <span>{{ project.subtitle }}</span><br/>
-      <span>{{ project.location }} | {{ project.year }}</span><br/>
-
-      {% if project.collaborators %}
-      <span>w/ {{ project.collaborators }}</span>
-      {% endif %}
-
-      <p>{{ project.excerpt }}</p>
-    </li>
+    {% include project_list_item.html project=project %}
   {% endif %}
 {% endfor %}
 </ul>
@@ -74,19 +57,7 @@ music production, photography, 3D modeling, and more! I've showcased a few below
 <ul>
 {% for project in sorted_projects %}
   {% if project.portfolio == true %}
-    <li>
-      <h3>
-        {{ project.title }}
-      </h3>
-      <span>{{ project.subtitle }}</span><br/>
-      <span>{{ project.location }} | {{ project.year }}</span><br/>
-
-      {% if project.collaborators %}
-      <span>w/ {{ project.collaborators }}</span>
-      {% endif %}
-
-      <p>{{ project.excerpt }}</p>
-    </li>
+    {% include project_list_item.html project=project %}
   {% endif %}
 {% endfor %}
 </ul>

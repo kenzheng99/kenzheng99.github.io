@@ -6,7 +6,7 @@ location: Hong Kong
 start: Jun 2020
 end: Aug 2020
 date: 2020-08-01
-tags: React, Frontend, TypeScript, Webpack, HTML, CSS 
+tags: ['React', 'Frontend', 'TypeScript', 'Webpack', 'HTML', 'CSS']
 ---
 
 - Developed features and bug fixes for HexSafe, an enterprise crypto custody platform currently in production

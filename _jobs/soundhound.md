@@ -6,7 +6,7 @@ location: Santa Clara, CA
 start: May 2022
 end: Aug 2022
 date: 2022-08-01
-tags: C++, Backend, Natural Language Understanding
+tags: ['C++', 'Backend', 'Natural Language Understanding']
 ---
 
 - Developed features for the natural language understanding module of a voice-based restaurant ordering system
