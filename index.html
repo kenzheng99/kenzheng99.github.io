@@ -15,7 +15,8 @@ title: Hey, I'm Ken!
 
 <hr>
 
-<h2>Where I've Worked</h2>
+<a id="jobs"></a>
+<h1>Where I've Worked</h1>
 <ul>
 {% assign sorted_jobs = site.jobs | sort: 'date' | reverse %}
 {% for job in sorted_jobs %}
@@ -30,18 +31,17 @@ title: Hey, I'm Ken!
 
 <hr>
 
-<h2>Featured Projects</h2>
+<a id="projects"></a>
+<h1>Featured Projects</h1>
 
-Here's a showcase of a few projects I've been working on during my time at CMU.
+Here are some notable projects and publications I've worked on during my time at CMU.
 <ul>
 {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
 {% for project in sorted_projects %}
   {% if project.featured == true %}
     <li>
       <h3>
-        <a href="{{ project.url }}">
         {{ project.title }}
-        </a>
       </h3>
       <span>{{ project.subtitle }}</span><br/>
       <span>{{ project.location }} | {{ project.year }}</span><br/>
@@ -58,5 +58,44 @@ Here's a showcase of a few projects I've been working on during my time at CMU.
 
 <p>
   For a full list of all my projects, check out 
-  <a href="/projects">the archive</a>.
+  <a href="/archive">the archive</a>.
+</p>
+
+<hr>
+
+<a id="portfolio"></a>
+<h1>Creative Portfolio</h1>
+<p>
+Aside from AI/ML and software projects, I've also worked on a lot of hobby projects in game development,
+music production, photography, 3D modeling, and more! I've showcased a few below, check out the rest in
+<a href="/archive">the archive</a>.
+</p>
+
+<ul>
+{% for project in sorted_projects %}
+  {% if project.portfolio == true %}
+    <li>
+      <h3>
+        {{ project.title }}
+      </h3>
+      <span>{{ project.subtitle }}</span><br/>
+      <span>{{ project.location }} | {{ project.year }}</span><br/>
+
+      {% if project.collaborators %}
+      <span>w/ {{ project.collaborators }}</span>
+      {% endif %}
+
+      <p>{{ project.excerpt }}</p>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<hr>
+
+<h1>Contact Me</h1>
+<p>
+  I'm currently looking for full-time opportunities after graduation, so please reach out at
+  <a href="mailto: kenzheng99@gmail.com" target="_blank">kenzheng99@gmail.com</a>
+  if you have any opportunities that might interest me!
 </p>

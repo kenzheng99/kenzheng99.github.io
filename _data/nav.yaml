@@ -1,8 +1,10 @@
 - name: About 
   link: /
 - name: Experience
-  link: /jobs/
+  link: /#jobs
 - name: Projects
-  link: /projects/
-- name: Hobbies
-  link: /hobbies/
+  link: /#projects
+- name: Portfolio 
+  link: /#portfolio
+- name: The Archive
+  link: /archive

@@ -1,5 +1,5 @@
 ---
-title: Fig-QA (Published @ NAACL 2022)
+title: Fig-QA - (Published @NAACL 2022)
 subtitle: Testing the ability of language models to interpret figurative language
 collaborators: Emmy Liu, Chen Cui, Prof. Graham Neubig
 location : CMU
