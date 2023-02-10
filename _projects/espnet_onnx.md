@@ -5,6 +5,7 @@ collaborators: Karthik Ganesan, Samarth Navali, Masao Someki, Prof. Shinji Watan
 location : CMU
 year: 2022
 date: 2022-12-01
+featured: true
 ---
 
 Optimized the open-source ESPnet speech toolkit to support ONNX exporting via the PyTorch ONNX API.
