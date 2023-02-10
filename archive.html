@@ -1,0 +1,15 @@
+---
+layout: page
+title: The Archive 
+---
+
+<p>
+  {{site.data.text.projects}}
+</p>
+
+<ul>
+{% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+{% for project in sorted_projects %}
+  {% include project_list_item.html project=project %}
+{% endfor %}
+</ul>
