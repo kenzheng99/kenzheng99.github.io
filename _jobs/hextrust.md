@@ -1,7 +1,7 @@
 ---
 title: Hex Trust 
 company: Hex Trust 
-position: Software Engineering Intern
+position: Frontend Engineering Intern
 location: Hong Kong
 start: Jun 2020
 end: Aug 2020

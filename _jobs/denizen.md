@@ -1,7 +1,7 @@
 ---
 title: Denizen Financial 
 company: Denizen Financial 
-position: Front-end Engineering Intern
+position: Frontend Engineering Intern
 location: San Francisco, CA
 start: Jun 2018
 end: Aug 2018
